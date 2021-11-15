@@ -8,3 +8,14 @@ Feel free to further design the user experience in a way you see fit.
 
 But please try to not spend more than 3 hours on this exercise. Don't get lost in e.g. styling, error handling, or testing.
 We don't want to see a perfectly programmed webapp, we rather want to see how you approach the problem.
+
+Install Node.js
+
+Install NPM and Angular CLI and install the dependencies
+
+                                   npm install -g @angular/cli
+                                   npm install
+                                   
+Running the client (LH:4200) (Typescrypt | Angular 8+) - Inside the folder src folder - run the following command:
+
+                                   npm start --open
