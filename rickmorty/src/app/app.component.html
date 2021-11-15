@@ -1,0 +1,35 @@
+<div style="padding: 60px; text-align: center;">
+  <h1>RICK & MORTY CHARACTERS SEARCH ENGINE</h1>
+  <p>Please, search for your favorite character</p>
+  <form class="example-form" style="display: inline-block;">
+    <mat-form-field class="example-full-width" appearance="fill">
+      <mat-label>Character Name:</mat-label>
+      <input type="text" (keyup.enter)="getCharactersByName()" name="searchInput" [(ngModel)]="searchInput" value="" (ngModelChange)="getCharactersByName()"
+             placeholder="Write here"
+             aria-label="Character Name"
+             matInput
+             [matAutocomplete]="auto">
+             <button (click)="getCharactersByName()">Search</button>
+      <mat-autocomplete #auto="matAutocomplete">
+        <mat-option *ngFor="let char of charactersSearched" [value]="char.name">
+          {{char.name}}
+        </mat-option>
+      </mat-autocomplete>
+    </mat-form-field>
+  </form>
+
+
+<div style="text-align:center" *ngIf="charactersSearched.length !== 0">
+  <div class="main-container">
+    <div class="character-container" *ngFor="let character of charactersSearched">
+      <img [src]="character.image" [alt]="character.name">
+      <p>{{character.name}}</p>
+      <p>Status: {{character.status}}</p>
+      <p>Species: {{character.species}}</p>
+    </div>
+  </div> 
+</div>
+</div>
+
+
+
