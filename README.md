@@ -1,21 +1,69 @@
-# rickAndMorty
-Coding Challenge Instructions
 
-Please develop a small webapp for searching Rick&Morty characters. There are two APIs - GraphQL (preferred) and REST - that you can use for that: https://rickandmortyapi.com/documentation.
-The app should have a search bar with results shown below. When the user types something into the search bar he/she should be presented with suggested character names.
-If the user presses enter, the character results for the entered search term should be shown. If the user clicks on one of the suggestions, the results for that suggestion should be shown.
-Feel free to further design the user experience in a way you see fit.
+# Rick and Morty Character Search WebApp
 
-But please try to not spend more than 3 hours on this exercise. Don't get lost in e.g. styling, error handling, or testing.
-We don't want to see a perfectly programmed webapp, we rather want to see how you approach the problem.
+This web application allows users to search for Rick and Morty characters using a search bar with real-time suggestions. It utilizes the **Rick and Morty API** for fetching character data, with **GraphQL** as the preferred API option.
 
-Install Node.js
+---
 
-Install NPM and Angular CLI and install the dependencies
+## Features
 
-                                   npm install -g @angular/cli
-                                   npm install
-                                   
-Running the client (LH:4200) (Typescrypt | Angular 8+) - Inside the folder src folder - run the following command:
+- **Search Bar with Suggestions**: As users type in the search bar, character name suggestions are displayed.
+- **Search Results**: Pressing Enter or clicking a suggestion shows detailed character search results.
+- **GraphQL and REST API Support**: Leverages the Rick and Morty API for fetching data.
 
-                                   npm start --open
+---
+
+## Prerequisites
+
+To run this project, ensure you have the following installed on your system:
+
+- **Node.js**
+- **NPM (Node Package Manager)**
+- **Angular CLI**
+
+---
+
+## Setup Instructions
+
+### 1. Install Angular Dependencies
+
+Run the following commands to install the Angular CLI and the project dependencies:
+
+```bash
+npm install -g @angular/cli
+npm install
+```
+
+### 2. Run the Application
+
+Navigate to the `src` folder of the project and start the Angular client server:
+
+```bash
+npm start --open
+```
+
+This will open the application in your default browser at `http://localhost:4200/`.
+
+---
+
+## How to Use
+
+1. **Search Characters**: Use the search bar to type the name of a character.
+2. **View Suggestions**: Suggestions will appear as you type.
+3. **View Results**: 
+   - Press **Enter** to display results for the entered term.
+   - Click a suggestion to display results for that specific character.
+
+---
+
+## Additional Notes
+
+- This project is designed as a coding challenge and focuses on the functionality of character search using **GraphQL** or **REST APIs** from [Rick and Morty API](https://rickandmortyapi.com/documentation).
+- The goal is to demonstrate problem-solving skills and approach, not a perfectly styled or production-ready application.
+
+---
+
+## Summary
+
+This Rick and Morty search webapp is a simple yet effective tool to explore characters from the Rick and Morty universe. It demonstrates the use of modern **Angular** for building responsive and interactive user interfaces.
+
